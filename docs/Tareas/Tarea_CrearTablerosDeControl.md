@@ -9,8 +9,8 @@
 ¿Qué necesita?
     
     1. Herramienta para el diseño de los mock-ups (https://ninjamock.com/)
-    2. Herramienta para desarrollar tableros de control -[Google data studio](https://datastudio.google.com)
-    3. Acceso al servidor de base de datos donde realizó su tarea anterior o en caso de requerirlo puede utilizar la bodega WWImporters_DWH_tablero con los datos del modelo multidimensional de movimientos.
+    2. Herramienta para desarrollar tableros de control -[Looker studio](https://datastudio.google.com)
+    3. Acceso al servidor de base de datos donde realizó su tarea anterior o en caso de requerirlo puede utilizar la bodega WWImporters_DWH_tablero con los datos del modelo multidimensional de movimientos. Esta base de datos se publicará luego de realizar la tarea de ETLIncremental.
 
 ## **Enunciado**
 
@@ -24,7 +24,7 @@ Wide World  Importers está muy interesado en resolver el siguiente requerimient
 
 Es así como lo contrató una vez más para desarrollar los siguientes entregables.
 
-1. **Entregable 1: Mock-up del tablero de control.** Diseñe el tablero de control que piensa implementar. Para ello revise los elementos gráficos que le brinda Google Data Studio, busque ejemplos de tableros de control. No olvide pensar en, para quién está haciendo el tablero de control y el requerimiento que se quiere resolver. 
+1. **Entregable 1: Mock-up del tablero de control.** Diseñe el tablero de control que piensa implementar. Para ello revise los elementos gráficos que le brinda Looker Studio, busque ejemplos de tableros de control. No olvide pensar en, para quién está haciendo el tablero de control y el requerimiento que se quiere resolver. 
 2. **Entregable 2: Modo edición del tablero de control y video técnico.** Una vez tenga claridad del tablero de control que quiere construir, gracias al mock-up diseñado, estará listo para su desarrollo. Recuerde darle identidad de la empresa al tablero que desarrolle. Incluya un video corto (máx. 3 minutos), donde muestre los detalles de edición del tablero construido, como la base de datos a la que se conecta para traer los datos y el resultado del tablero construido.
 3. **Entregable 3: Posible uso del tablero.** Incluya un párrafo que contenga:
    - El rol de la organización que se beneficia con el uso de este tablero de control, al igual el área a la que pertenece. Puede definirla de acuerdo al sector.
