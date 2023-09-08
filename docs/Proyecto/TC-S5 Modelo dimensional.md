@@ -28,12 +28,20 @@ A continuación, se presentan los análisis propuestos y los datos requeridos pa
 ## **Recursos requeridos**
 ***Datos suministrados***
 
-Los datos los puede encontrar en la base de datos: ProyectoTransaccional del servidor que manejamos en los tutoriales. También puede encontrar el diccionario de los mismos [aquí](https://github.com/MISW-4402-Analisis-y-Modelado-de-datos/guias/blob/main/docs/Proyecto/Diccionario%20IV.xlsx), ambos recursos requeridos para el desarrollo de esta tarea, las tablas son copias de las tablas relacionales del negocio. 
+Los datos los puede encontrar en la base de datos: ProyectoTransaccional del servidor que manejamos en los tutoriales. También puede encontrar el diccionario de los mismos [aquí](https://github.com/MISW-4402-Analisis-y-Modelado-de-datos/guias/blob/main/docs/Proyecto/Diccionario%20IV.xlsx). En esta base de datos, a partir de la entrega de la tarea de entendimiento de datos, va a encontrar tanto las tablas con sufijo y sin sufijo "Copia". Las tablas sin sufijo "Copia" representan las tablas corregidas luego de la revisión del entendimiento de los datos.
+Tablas compartidas para el entendimiento de datos
 -	aeropuertosCopia
 -	divipolaCopia
 -	vuelosCopia
 -	pibCopia
 -	proyeccionesCopia
+
+Tablas corregidas luego del reporte de entendimiento de datos
+-	aeropuertos
+-	divipola
+-	vuelos
+-	pib
+-	proyecciones
 
 ***Tecnología***
 
