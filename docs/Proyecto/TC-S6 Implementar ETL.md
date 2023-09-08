@@ -32,6 +32,7 @@ Para la fecha, si no hay día o mes asuma como valores por defecto el primer dí
 Estarán disponibles después de la entrega de Entendimiento de datos del proyecto.
 
 
+
 ***Modelo multidimensional propuesto***<br>
 
 Estará disponibles después de la entrega de Modelado multidimensional del proyecto.
