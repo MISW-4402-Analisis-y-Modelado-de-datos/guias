@@ -18,7 +18,7 @@ Dentro  de  procesos  de  ETL,  es común  que se  presenten  dimensiones que pu
 
 2. Tutorial ETL Incremental 
 3. Notebook para trabajar: puede usar la seccion 3 "Espacio para desarrollar la tarea" al final del notebook del tutorial para realizar esta actividad
-4. Servidor SQL con la bodega de datos construida hasta el momento "WWImporters_DWH_solucion" (En la base de datos estará disponible luego de entregar la tarea de ETL), en esta base de datos el hecho está en la versión del ETL inicial. Adicionalmente, recuerde que tiene acceso a la base de datos relacional "WWImportersTransactional" y la base de datos relacional que ha ido construyendo (corresponde a la bodega de WWI "Estudiante_i" con los datos cargados de ETL)
+4. Servidor SQL con la bodega de datos construida hasta el momento "WWImporters_DWH_solucion" (Esta base de datos estará disponible luego de entregar la tarea de ETL), en esta base de datos el hecho está en la versión del ETL inicial. Adicionalmente, recuerde que tiene acceso a la base de datos relacional "WWImportersTransactional" y la base de datos relacional que ha ido construyendo (corresponde a la bodega de WWI "Estudiante_i" con los datos cargados de ETL)
 5. Archivos sql con los datos listos para cargue a bodega de datos en caso de requerirlo
 
 # Enunciado
