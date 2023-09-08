@@ -25,7 +25,7 @@ Dentro  de  procesos  de  ETL,  es común  que se  presenten  dimensiones que pu
 Ahora que sabe cómo realizar un proceso ETL con manejo de historia, dado el modelo multidimensional del proceso de negocio de **movimientos de inventario**, debe enfrentar el reto de tener ciudades de los clientes que cambian en el tiempo, es decir clientes que cambian de ciudad donde se entregan sus pedidos, y que el negocio reporta de  diferentes maneras desde la base transaccional, que llamaremos escenarios. A partir de esto, reflexione sobre:
 1. **Práctica 1 - Modelo multidimensional:** Identifique cuáles técnicas de manejo de historia se podrían usar y actualice el modelo multimensional con base en el tipo de manejo que considere apropiado para el tema (justifique su respuesta)
 2. **Práctica 2 - Diseño del ETL:** Reflexione sobre los ajustes requeridos en el diseño del ETL de manera que se incluya el manejo de historia que propuso para el modelo multidimensional
-3. **Práctica 3 - Implementación del ETL con historia:** Implemente los cambios al ETL de manera que incluya el manejo de historia de manera que incluya su propuesta de manejo de historia
+3. **Práctica 3 - Implementación del ETL con historia:** Implemente los cambios al ETL de manera que incluya el manejo de historia de su propuesta
 
 Recuerde que esta actividad es **formativa**, es decir no tendra entregable ni nota. Es una práctica que le permitirá entender lo que se requiere para realizar un ETL incremental con historia y prepararse para el momento de aplicarlo al proyecto.
 
