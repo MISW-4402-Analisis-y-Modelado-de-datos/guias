@@ -32,7 +32,7 @@ WWImporters le comparte el modelo multidimensional que ha decido utilizar. Este 
 Sobre los resultados del entendimiento de datos, Wide World Importers les comenta lo siguiente:
 - Cada fila representa una transacción o movimiento de productos en el inventario
 - Los días de pago no pueden ser negativos no tiene sentido para nuestro negocio. Por favor corregir multiplicando los datos negativos por -1.
-- Sobre la regla de negocio dada para la actividad de entendimiento de datos "La cantidad máxima de productos movidos es 50 millones por transaccion", el negocio revisó y encontró que efectivamente gracias a los avances ya puede mover más que la cantidad de 50 millones por transacción, por lo cual ajusta la regla de negocio. 
+- Sobre la regla de negocio dada para la actividad de entendimiento de datos "La cantidad máxima de productos movidos es 50 millones por transaccion", el negocio revisó y encontró que efectivamente gracias a los avances logradas en su operación, ya puede mover más que la cantidad de 50 millones por transacción, por lo cual elimina esa regla de negocio. 
 - La falta de datos antes del 2014 es un error de extracción de datos. Los nuevos datos incluyen este año.
 - Nuestro análisis concluye que la información que se ha duplicado totalmente no es útil. Por favor no tenerlos en cuenta. 
 - "El formato de fechas manejado es YYYY-MM-DD HH:MM:SS si tienen hora, minutos y segundos. De lo contrario el formato es YYYY-MM-DD": En cuanto a formatos de fechas estamos de acuerdo con que los estandarizemos y el formato sea el especificado en la regla de negocio.
