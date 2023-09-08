@@ -42,7 +42,7 @@ Recuerden que están los tutoriales "Proceso ETL" y "Proceso ETL Incremental"
 
 ## **Recomendaciones de los entregables**
 
-Incluir en la entrega la dirección (URL) de la wiki de su repositorio <i>Estudiante_i</i> donde registró lo solicitado en esta tarea con las actividades realizadas dentro de las fechas establecidas
+Incluir en la entrega la dirección (URL) de la wiki del repositorio del grupo <i>Proyecto_Gi</i> donde registró lo solicitado en esta tarea con las actividades realizadas dentro de las fechas establecidas
 
 ## **Preguntas o más información**
 - Si el cargue de datos con la función <i>guardar_db()</i> se demora, hacer uso del código de cargue por lotes que encuentra en el Tutorial de ETL al final del bloque 6: Hecho orden. Revíselo y ajústelo de acuerdo con las necesidades que tenga.
