@@ -71,6 +71,8 @@ Tablas corregidas luego del reporte de entendimiento de datos
 
 **Aeropuertos**
 - Infraestructura Visible les recuerda que el año de inicio para la bodega de datos es 2015, pero que cuenta con información desde 1957 y la historia de cambio se empezó a registrar desde 2015 y se tiene historia hasta 2017
+- Infraestructura Visible les comenta que se hicieron las revisiones y se quitaron los registros duplicados para los aeropuertos que coincidian en nombre y variaban en las columnas carga_bordo, carga_ofrecida y pasajeros_en_vuelos de la tabla de aeropuertos
+- Se completó la información de aeropuertos origen y destino que faltaba
 - Se corrigieron los valores de longitud de pista, se agregaron las categorías para los aeropuertos que no son aeródromos
 - Se revisó la columna constante de Latitud de los aeropuertos y se corrigieron los valores
 - Identificó el problema con número de vuelos origen negativos y les solicita que corrijan esos valores negativos multiplicando por -1
@@ -80,8 +82,6 @@ Tablas corregidas luego del reporte de entendimiento de datos
 **Vuelos**
 - Las siglas de tráfico significan: N = Nacional, I = Internacional, E= postal o urgentes. Las siglas de tipos de vuelos significan: R= regular, T= taxi, C= chárter, A= adicionales
 - Infraestructura visible nos aclara que las unidades de las variables carga_bordo y carga_ofrecida son kilogramos.
-- Infraestructura Visible les comenta que se hicieron las revisiones y se quitaron los registros duplicados para los aeropuertos que coincidian en nombre y variaban en las columnas carga_bordo, carga_ofrecida y pasajeros_en_vuelos de la tabla de aeropuertos
-- Se completó la información de aeropuertos origen y destino que faltaba
 
 **Integración**
 - La integración entre divipola y aeropuertos debe realizarse utilizando los códigos de municipio ya que los aeropuertos están asociados únicamente a municipios. En particular, les sugiere utilizar las columnas gcd_municipio y gcd_departamento a nivel de aeropuertos y relacionarlas con las columnas código municipio y código de departamento de divipola.
