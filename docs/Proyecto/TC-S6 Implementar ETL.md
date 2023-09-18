@@ -54,17 +54,17 @@ Para la fecha, si no hay día o mes asuma como valores por defecto el primer dí
 
 **Aeropuertos**
 - Infraestructura Visible les recuerda que el año de inicio para la bodega de datos es 2015, pero que cuenta con información desde 1957 y la historia de cambio se empezó a registrar desde 2015 y se tiene historia hasta 2017
-- Se completó la información de aeropuertos origen y destino que faltaba
+- Se completó la información de aeropuertos origen y destino que faltaba para aeropuertos colombianos
 - Se corrigieron los valores de longitud de pista, se agregaron las categorías para los aeropuertos que no son aeródromos
 - Se revisó la columna constante de Latitud de los aeropuertos y se corrigieron los valores
 - Identificó el problema con número de vuelos origen negativos y les solicita que corrijan esos valores negativos multiplicando por -1
-- Los datos compartidos de aeropuertos no incluyen los aeropuertos internacionales.
-- A pesar del esfuerzo para recolectar información de dimensiones de aeropuestor y de número de vuelos para los cuales fueron diseñados, hay varios aeropuertos para los cuales no se consiguió esta información y se utiliza como comodín para completarlos el valor de 0 en dichos campos.
+- Los datos compartidos de aeropuertos no incluyen los aeropuertos internacionales. En esta iteración, la dimensión de aeropuertos tendrá solo información de aeropuertos colombianos.
+- A pesar del esfuerzo para recolectar información de dimensiones de aeropuerto y de número de vuelos para los cuales fueron diseñados, hay varios de ellos donde no fue posible encontrar esta información. En este caso, se utiliza el valor de 0 como comodín en los campos donde no se cuenta con este dato.
 
 **Vuelos**
 - Las siglas de tráfico significan: N = Nacional, I = Internacional, E= postal o urgentes. Las siglas de tipos de vuelos significan: R= regular, T= taxi, C= chárter, A= adicionales
 - Infraestructura visible nos aclara que las unidades de las variables carga_bordo y carga_ofrecida son kilogramos.
-- - Infraestructura Visible les comenta que se hicieron las revisiones y se quitaron los registros duplicados para los aeropuertos que coincidian en nombre y variaban en las columnas carga_bordo, carga_ofrecida y pasajeros_en_vuelos de la tabla de vuelos
+- Infraestructura Visible les comenta que se hicieron las revisiones y se quitaron los registros duplicados para los aeropuertos que coincidian en nombre y variaban en las columnas carga_bordo, carga_ofrecida y pasajeros_en_vuelos de la tabla de vuelos
 
 **Integración**
 - La integración entre divipola y aeropuertos debe realizarse utilizando los códigos de municipio ya que los aeropuertos están asociados únicamente a municipios. En particular, les sugiere utilizar las columnas gcd_municipio y gcd_departamento a nivel de aeropuertos y relacionarlas con las columnas código municipio y código de departamento de divipola.
@@ -73,10 +73,13 @@ Para la fecha, si no hay día o mes asuma como valores por defecto el primer dí
 
 ***Modelo multidimensional propuesto***<br>
 
-El modelo propuesto muestra dos tablas de hecho. La primera de ellas **HechoVuelo**, representa el proceso de registro de vuelos que es un histórico de los vuelos realizados desde o hacia aeropuertos en Colombia entre 2004 y 2017. La granularidad del hecho es de carácter mensual, y cada registro contiene el mes-año, aeropuerto de origen, aeropuerto de destino, municipio (repreentado por la dimensión GeografíaConDemografía), al cual fue asignado el aeropuerto, las características del aeropuerto en el momento del reporte, tipo de vuelo (Chárter, Regular, Taxi o Adicionales, etc.), tipo de tráfico (Internacional, Nacional, etc.), total de vuelos realizados y el número total de sillas en esos vuelos, carga ofrecida para los vuelos realizados, pasajeros que viajaron y generaron ingresos a la aerolínea y carga a bordo de los vuelos. 
+El modelo propuesto muestra dos tablas de hecho. La primera de ellas **HechoVuelo**, representa el proceso de registro de vuelos que es un histórico de los vuelos realizados desde o hacia aeropuertos en Colombia entre 2004 y 2017. La granularidad del hecho es de carácter mensual, y cada registro contiene el mes-año, aeropuerto de origen, aeropuerto de destino, municipio (representado por la dimensión GeografíaConDemografía), al cual fue asignado el aeropuerto, las características del aeropuerto en el momento del reporte, tipo de vuelo (Chárter, Regular, Taxi o Adicionales, etc.), tipo de tráfico (Internacional, Nacional, etc.), total de vuelos realizados y el número total de sillas en esos vuelos, carga ofrecida para los vuelos realizados, pasajeros que viajaron y generaron ingresos a la aerolínea y carga a bordo de los vuelos. 
+
 La segunda tabla de hechos **HechoHistoriaCambios** almacena la historia de los cambios realizados en los aeropuertos a nivel de longitud, ancho, clase, tipo, número de vuelos teniendo como origen ese aeropuerto y dado que es una *factless*, como medida se adicionó el campo cambio que es una constante de valor “1”.
 
-Con respecto al manejo de historia de atributos, **GeografíaConDemografía** tiene un **manejo tipo 2** que permite registrar entre otros cambios las proyecciones. Mientras que, para **aeropuerto**, se propuso un **tipo 4**, creándose la minidimensión MiniDimensiónAeropuerto. En esta ocasión, el modelo multidimensional compartido a nivel de los hechos, no incluye las FK con las dimensiones. Sin embargo, están repreentadas de forma implicita por las relaciones uno a muchas y deben ser consideradas durante el proceso de ETL.
+Con respecto al manejo de historia de atributos, **GeografíaConDemografía** tiene un **manejo tipo 2** que permite registrar entre otros cambios las proyecciones. Mientras que, para **aeropuerto**, se propuso un **tipo 4**, creándose la minidimensión MiniDimensiónAeropuerto. En esta ocasión, el modelo multidimensional compartido a nivel de los hechos, no incluye las FK con las dimensiones. Sin embargo, están representadas de forma implicita por las relaciones uno a muchas y deben ser consideradas durante el proceso de ETL.
+
+**GeografíaConDemografía** contiene toda la información relacionada con la geografía y con el manejo de los vuelos. Es así como contiene información especifica del Departamento como es: el nombre, el PIB, el total Hombres y total Mujeres. Mientras que, para la información del municipio contiene el nombre, el área metropolitana, la latitud y la longitud. Esto facilitará los análisis cuando incluyan esta dimensión.
 
 **Idea para los rangos**: El manejo de los rangos en la minidimensión, puede hacerlos con los cuartiles, así el primer rango va de R1:[0-valor del 25%), R2:[Valor del 25%,Valor del 50%), R3: [Valor del 50%, Valor del 75%), R4: > valor del 75%.
 
