@@ -32,7 +32,7 @@ El modelo final estará disponible después de la entrega de Modelado multidimen
 - Dividan el proceso de construcción del tablero de control: la primera parte donde adicionan los gráficos y la segunda, donde prueba con la totalidad de los datos. Durante la primera parte, pueden crear una tabla/vista con la misma estructura de la que requieren y una muestra de los registros para entender su comportamiento. Una vez tengan listo y probado el gráfico pueden hacer la consulta sobre la tabla/vista con todos los datos.
 - Incluir en la entrega la dirección de la wiki donde registraron lo solicitado en esta tarea.
 - Padlet a utilizar:
-    - Enlace: [Padlet proyecto](https://padlet.com/misomiad/kq5n1v9wxpd3pl5)
+    - Enlace: [Padlet proyecto](https://uniandes.padlet.org/miadvirtualmde/resultados-proyecto-miso-f3wmt7riahy36tcn)
     - Contraseña: AMD202314
     
 ## **Preguntas o más información**
