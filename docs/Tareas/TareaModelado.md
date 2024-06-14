@@ -23,7 +23,6 @@ Ahora que sabe cómo crear modelos multidimensionales y hacer sentencias básica
 **1. MODELO MULTIDIMENSIONAL**: Proponga un modelo multidimensional para el siguiente caso, incluya detalles del modelo como el nivel de granularidad y aclaraciones que considere importantes, como parte de la entrega del mismo. Esta parte **NO** incluye la creación de tablas ni su población y el tema es distinto al del punto 2.
 
 **MovilidadALPES** 
-Inspirado en el zoológico de Cali -- http://www.zoologicodecali.com.co 
 
 La secretaria de movilidad de los Alpes como cabeza del sector Movilidad y autoridad de tránsito y transporte, presta servicios, planea y formula las políticas del sector, generando condiciones de movilidad acordes con las necesidades de la población de Bogotá D. C, … -- Documento sobre la misión de la entidad. Uno de sus objetivos es aumentar la cobertura y efectividad de la presencia en vía y una de las metas que persigue es la reducción de accidentes con muertos.
 
