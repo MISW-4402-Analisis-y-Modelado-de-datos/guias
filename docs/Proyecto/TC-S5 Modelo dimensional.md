@@ -11,6 +11,8 @@ En esta fase del proyecto, a partir de los análisis requeridos y de fuentes de 
 1.	**Entregable 1- Modelo multidimensional:** Una propuesta de modelo multidimensional que permita realizar los análisis propuestos por la organización. El modelo debe estar acompañado de una descripción y justificación. Modele el proceso de negocio <i>RegistroDeVuelos</i> que se realiza de forma mensual.
 2.	**Entregable 2 - Diseño del proceso ETL:** Incluir el diseño ETL propuesto para poblar las tablas asociadas al modelo multidimensional propuesto, utilizando como fuentes, las compartidas. Incluya una descripción general con los elementos que considere son importantes para la comprensión del diseño.
 
+Es importante mencionar que a partir de esta entrega en la nota se evaluará el trabajo en grupo y el trabaja individual. Este último se calcula tomando como base la coevaluación entre miembros de grupo que deben diligenciar.
+
 A continuación, se presentan los análisis propuestos y los datos requeridos para lograr los objetivos de esta tarea.
 
 | Tema analítico  | Análisis requeridos o inferidos | Categoría del análisis (*)  | Procesos de negocio | Fuentes de datos |
@@ -60,3 +62,4 @@ Incluir en la entrega la dirección (URL) de la wiki del repostiro del grupo <i>
 ## **Preguntas o más información**
 - Las preguntas que surjan en el desarrollo de esta tarea pueden registrarlas en el slack del curso
 - Recuerde que tiene a su disposición el tutorial de Creación y manejo de la Wiki [aquí](https://misovirtual.virtual.uniandes.edu.co/codelabs/wiki-github/index.html?index=..%2F..ETL#0)
+- Nota grupal aporta un 9%  y nota individual un 1%.
