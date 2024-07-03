@@ -13,7 +13,9 @@ En esta fase del proyecto, a partir de la capacitación recibida en los diferent
 A nivel de trabajo en grupo, dada la experiencia que la empresa tiene en este estilo de proyectos, le sugiere lo siguiente:
 - Cada miembro del grupo se haga responsable de una dimensión o de dos si la dimensión es básica.
 - Definan de forma conjunta el proceso a seguir para las transformaciones y cargue de la tabla de hechos
-- El miembro con las dimensiones más sencillas o el menor número de dimensiones asignadas trabaje la tabla de hechos. 
+- El miembro con las dimensiones más sencillas o el menor número de dimensiones asignadas trabaje la tabla de hechos.
+
+Recuerden que la nota de la actividad se calcula tomando como base el aporte grupal y el individual. El individual se calcula usando la información reportada en la coevaluación entre miembros del grupo.
 
 ## **Recursos requeridos**
 ***Datos suministrados***
@@ -51,3 +53,4 @@ Incluir en la entrega la dirección (URL) de la wiki del repositorio del grupo <
 - Recuerde que puede hacer reemplazos de cadenas de caracteres haciendo uso de diccionarios, puede encontrar ejemplos en el siguiente enlace: https://sparkbyexamples.com/pyspark/pyspark-replace-column-values/
 - Las preguntas que surjan en el desarrollo de esta tarea pueden registrarlas en el slack del curso
 - Recuerde que tiene a su disposición el tutorial de Creación y manejo de la Wiki [aquí](https://misovirtual.virtual.uniandes.edu.co/codelabs/wiki-github/index.html?index=..%2F..ETL#0)
+- Nota grupal aporta un 9% y la nota individual un 1%.
