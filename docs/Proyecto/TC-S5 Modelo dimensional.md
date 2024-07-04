@@ -47,7 +47,46 @@ Tablas corregidas luego del reporte de entendimiento de datos
 
 ***Respuestas del negocio a conclusiones de Entendimiento***<br>
 
-Estarán disponibles después de la entrega de Entendimiento de datos del proyecto.
+**Comentarios generales**
+- Infraestructura Visible sugiere que para el manejo de fechas, si no hay día o mes y se requiere, utilizar como valores por defecto el primer día del mes, y el primer mes de cada año
+- Infraestructura Visible está de acuerdo con que ustedes eliminen los duplicados totales que encontraron en los datos en las diferentes tablas compartidas
+- Infraestructura Visible está de acuerdo con la estandarización de los meses a nivel de las fechas y esta transformación será responsabilidad de ustedes
+
+**Departamentos, Municipios, Centros poblados**
+- Se revisaron los datos y se completó la información de los 10 departamentos y los 2 años que faltaban de los datos.
+- Infraestructura Visible revisó su comentario sobre problemas de los nombres en los departamentos y encontró efectivamente, diferentes nombres para un mismo departamento, por lo cual les propone estandarizar los nombres en un proceso de transformación que será responsabilidad de ustedes
+- Se revisaron los datos y se completó la información de los 2 departamentos que faltaban en los datos y los datos de proyecciones según edad para cada género
+- Se revisó la columna constante DP, que representa el código del departamento y se asignaron los valores correctos
+- Se revisaron las columnas Código Departamento y Nombre Municipio de la tabla divipolaCopia, se corrige el nombre del municipio pero les solicita corregir el código del departamento, usando como base la tabla de PIB. 
+- Los valores de longitud y Latitud de divipola fueron corregidos
+- Con respecto a los nombres de los departamentos que presentan errores,  el negocio les recomienda primero estandarizar los nombres haciendo uso de diccionarios y luego revisar duplicados para finalmente lograr hacer las integraciones que sean necesarias 
+- Se eliminaron los registros inconsistentes, donde aparecia el mismo centro poblado ubicado en distintos puntos geográficos según sus variables de latitud y longitud
+
+**Proyecciones y PIB**
+- Las proyecciones no hacen referencia a cantidad de vuelos, son proyecciones de población, es decir habitantes vivos por departamento para un año
+- El valor real de hombre para Valle del Cauca en 2014 es incorrecto, les piden que hagan la corrección (les recomendamos pensar en este caso, con los datos que tienen, ¿cuál es el mejor método de imputación?)
+- Infraestructura Visible, les solicitan imputar el valor extremo de la variable <i>total Mujeres</i>
+- El PIB es una medida de valor agregado, sus medidas son heterogéneas
+- Los totales son la suma por edad o genero. Ej Total 57 = Mujeres 57 +Hombres 57, Total Hombres = SUM(Hombres_i). Las proyecciones especificas son calculadas por el DANE a partir de los censos nacionales
+- Con respecto a la regla 2 de negocio que dice "se tiene la información de proyecciones de vida por género y edad para los 32 departamento desde 2005 a 2015" se aclara que la información incluída va hasta diciembre de 2014.
+
+**Aeropuertos**
+- Infraestructura Visible les recuerda que el año de inicio para la bodega de datos es 2015, pero que cuenta con información desde 1957 y la historia de cambio se empezó a registrar desde 2015 y se tiene historia hasta 2017
+- Se completó la información de aeropuertos origen y destino que faltaba
+- Se corrigieron los valores de longitud de pista, se agregaron las categorías para los aeropuertos que no son aeródromos
+- Se revisó la columna constante de Latitud de los aeropuertos y se corrigieron los valores
+- Identificó el problema con número de vuelos origen negativos y les solicita que corrijan esos valores negativos multiplicando por -1
+- Los datos compartidos de aeropuertos no incluyen los aeropuertos internacionales.
+- A pesar del esfuerzo para recolectar información de dimensiones de aeropuestor y de número de vuelos para los cuales fueron diseñados, hay varios aeropuertos para los cuales no se consiguió esta información y se utiliza como comodín para completarlos el valor de 0 en dichos campos.
+
+**Vuelos**
+- Las siglas de tráfico significan: N = Nacional, I = Internacional, E= postal o urgentes. Las siglas de tipos de vuelos significan: R= regular, T= taxi, C= chárter, A= adicionales
+- Infraestructura visible nos aclara que las unidades de las variables carga_bordo y carga_ofrecida son kilogramos.
+- - Infraestructura Visible les comenta que se hicieron las revisiones y se quitaron los registros duplicados para los aeropuertos que coincidian en nombre y variaban en las columnas carga_bordo, carga_ofrecida y pasajeros_en_vuelos de la tabla de vuelos
+
+**Integración**
+- La integración entre divipola y aeropuertos debe realizarse utilizando los códigos de municipio ya que los aeropuertos están asociados únicamente a municipios. En particular, les sugiere utilizar las columnas gcd_municipio y gcd_departamento a nivel de aeropuertos y relacionarlas con las columnas código municipio y código de departamento de divipola.
+- La integración entre aeropuertos y vuelos se hace respectivamente por medio de la Sigla y los campos origen o destino.
 
 
 ***Tecnología***
