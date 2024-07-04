@@ -9,7 +9,7 @@
 
 En esta fase del proyecto, a partir de los análisis requeridos y de fuentes de datos proporcionadas, Infraestructura Visible le solicita:
 1.	**Entregable 1- Modelo multidimensional:** Una propuesta de modelo multidimensional que permita realizar los análisis propuestos por la organización. El modelo debe estar acompañado de una descripción y justificación. Modele el proceso de negocio <i>RegistroDeVuelos</i> que se realiza de forma mensual.
-2.	**Entregable 2 - Diseño del proceso ETL:** Incluir el diseño ETL propuesto para poblar las tablas asociadas al modelo multidimensional propuesto, utilizando como fuentes, las compartidas. Incluya una descripción general con los elementos que considere son importantes para la comprensión del diseño.
+2.	**Entregable 2 - Diseño del proceso ETL:** Incluir el diseño ETL propuesto para poblar las tablas asociadas al modelo multidimensional propuesto, utilizando como fuentes, las compartidas. Incluya una descripción general con los elementos que considere son importantes para la comprensión del diseño. Utilice [esta plantilla del diseño ETL](https://github.com/MISW-4402-Analisis-y-Modelado-de-datos/guias/blob/main/docs/Proyecto/PlantillaDise%C3%B1oETL.xlsx) para esta actividad.
 
 Es importante mencionar que a partir de esta entrega en la nota se evaluará el trabajo en grupo y el trabaja individual. Este último se calcula tomando como base la coevaluación entre miembros de grupo que deben diligenciar.
 
