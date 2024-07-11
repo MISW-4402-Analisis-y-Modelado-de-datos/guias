@@ -88,6 +88,8 @@ Con respecto al manejo de historia de atributos, **GeografíaConDemografía** ti
 
 Recuerde que el carácter “[ ]” representa inclusión en el rango, mientras que el carácter “( )” no.
 
+En este modelo, se realiza una simplificación a nivel del número total de personas discriminadas por edad por departamento y sólo se toman los totales de hombres y mujeres.
+
 <img src="Img/Modelo_aeropuertos_definitivo.PNG" width="800"/>
 
 
