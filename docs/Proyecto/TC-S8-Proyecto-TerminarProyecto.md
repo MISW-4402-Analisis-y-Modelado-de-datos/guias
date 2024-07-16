@@ -23,9 +23,12 @@ Asociada a esta entrega encuentra un segundo enlace para determinar el grupo al 
 ## **Recursos requeridos**
 Todo el material desarrollado en el curso. Recuerde que estos recursos a nivel de datos y documentación los encuentra en estos enlaces del  repositorio:
 
-● Datos compartidos en la base de datos **proyecto_sol_test**, que corresponden a las tablas que representan el modelo dimensional compartido por InfraestructuraVisible como solución, el cual se presenta en la imagen que se presenta más adelante.
+● Datos compartidos en la base de datos **proyecto_sol_test**, que corresponden a las tablas que representan el modelo dimensional compartido por InfraestructuraVisible como solución, el cual se presenta en la siguiente imagen.
+
+- Para el manejo de valores faltantes en los atributos de las dimensiones, si son de tipo numérico utilice -1 y si son de tipo cadena de texto utilice no definido.
 
 El modelo final estará disponible después de la entrega de Modelado multidimensional del proyecto.
+
 
 ## **Recomendaciones de los entregables**
 - Tener una copia de las tablas compartidas en su ambiente de máquina virtual para que puedan trabajarlas de forma independiente.
