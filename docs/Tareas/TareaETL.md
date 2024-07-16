@@ -40,7 +40,8 @@ Sobre los resultados del entendimiento de datos, Wide World Importers les coment
 - "El formato de fechas manejado es YYYY-MM-DD HH:MM:SS si tienen hora, minutos y segundos. De lo contrario el formato es YYYY-MM-DD": En cuanto a formatos de fechas estamos de acuerdo con que los estandarizemos y el formato sea el especificado en la regla de negocio.
 - Existen proveedores que tienen 2 filas una con un nombre y otra con el mismo nombre mas un "Inc" o "Ltd". Unimos estos a un solo proveedor dado que se trató de un error de digitación.
 - El código postal igual para todos nuestros proveedores es un error que también fue corregido.
-- Cantidades negativas significan salidas de productos del inventario
+- Las cantidades negativas significan salidas de productos del inventario. En este tipo de movimiento hay información del cliente.
+- Las cantidades positivas significan una transacción directa con los proveedores, en la que no hay información del cliente.
 - El negocio indica que las tablas de categoriasProveedores y TiposTransaccion fueron analizadas previamente, por su grupo de consultores.
 
 Los datos revisados por el negocio quedan en las tablas Proveedores y movimientos y estos son los que deben utilizar en el proceso ETL. Por otra parte, en las tablas ProveedoresCopia y movimientosCopia quedan los datos con errores en caso de que deseen revisar/ejecutar el ejercicio que realizó de entendimiento de datos.
