@@ -40,7 +40,12 @@ En los videos y lecturas de esta semana, encuentra lo que debe tener en cuenta p
 - **El proceso de crear un tablero con una cantidad superior a 10.000 registros puede tomar bastante tiempo y mostrar errores de conexión. En este punto las sugerencias son:** 
   - Inicie el diseño con una tabla con pocos registros y una vez tenga la parte que quiere validar, completamente diseñada cambie la tabla a la definitiva. Puede usar alguna de las tablas de hecho que tienen como sufijo el número de registros que tienen, por ejemplo, **Hecho_Movimiento5000**.
   - Si está accediendo a la solución provista por nosotros, copiéla en su BD y trabajela de forma independiente a otros grupos. Puede crear una muestra de los datos
-  
+
+
+## **Preguntas frecuentes**
+- El nombre de usuario para la conexión en Looker Studio es el mismo usuario que utiliza en Workbench: 'Estudiante_i_202xxx'.
+- Si la conexión no funciona mediante el método de conexión básica, intente utilizando el método de URL de JDBC con la siguiente URL: jdbc:mysql://157.253.236.116:8080/Estudiante_i_202xxx?allowPublicKeyRetrieval=true (Recuerde reemplazar los valores de 'i' y 'xxx' por los correspondientes a su usuario).
+
 
 ## **Recuerde**
 - Ser cuidadoso con los colores y el contraste entre ellos al momento de realizar el tablero de control
