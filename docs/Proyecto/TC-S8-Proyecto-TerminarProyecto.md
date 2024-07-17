@@ -31,7 +31,7 @@ Todo el material desarrollado en el curso. Recuerde que estos recursos a nivel d
 
 - Para el manejo de valores faltantes en los atributos de las dimensiones, si son de tipo numérico utilice -1 y si son de tipo cadena de texto utilice no definido.
 
-El modelo final estará disponible después de la entrega de Modelado multidimensional del proyecto.
+El modelo final está disponible después de la entrega de Modelado multidimensional del proyecto en la guía de Modelado y ETL.
 
 
 ## **Recomendaciones de los entregables**
